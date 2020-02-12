@@ -24,7 +24,7 @@ class Conferencier():
     def display_conferencier(self):
         '''method selecting all conferenciers that have actif status'''
         self.db.initialize_connection()
-        self.db.cursor.execute("SELECT * FROM events WHERE statut_actif=True ;")
-        actif_conferencier = self.db.cursor.fetchall()
+        self.db.cursor.execute("SELECT * FROM conferenciers WHERE statut_actif=True ;")
+        actif_conferenciers = self.db.cursor.fetchall()
         self.db.close_connection()
-        return actif_conferencier
+        return actif_conferenciers
