@@ -27,8 +27,9 @@ CREATE TABLE conferences (
     REFERENCES products (product_id)
     ON DELETE CASCADE;
 
+
     ALTER TABLE conferences
-      ADD CONSTRAINT id_conferencier
-      FOREIGN KEY (titre, resume, date, heure, date_creation)
-      REFERENCES conferenciers (id)
-      ON DELETE CASCADE;
+    ADD CONSTRAINT mere
+    FOREIGN KEY (id_conferencier)
+    REFERENCES conferenciers (id)
+    ON DELETE CASCADE;
