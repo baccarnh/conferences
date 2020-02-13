@@ -10,7 +10,7 @@ CREATE TABLE conferenciers (
   profession VARCHAR (20) NOT NULL,
   satut_actif BOOLEAN NOT NULL );
 
-  
+
 CREATE TABLE conferences (
   id SERIAL PRIMARY KEY NOT NULL,
   titre VARCHAR (50) NOT NULL,
@@ -19,3 +19,16 @@ CREATE TABLE conferences (
   heure TIME NOT NULL,
   date_creation date,
   id_conferencier INTEGER NOT NULL );
+
+
+  ALTER TABLE inventory
+    ADD CONSTRAINT fk_inv_product_id
+    FOREIGN KEY (product_id)
+    REFERENCES products (product_id)
+    ON DELETE CASCADE;
+
+    ALTER TABLE conferences
+      ADD CONSTRAINT id_conferencier
+      FOREIGN KEY (titre, resume, date, heure, date_creation)
+      REFERENCES conferenciers (id)
+      ON DELETE CASCADE;
