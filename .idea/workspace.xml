@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9eb3d20d-9a1f-426d-8ad4-12a93379fa98" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cahiercharge.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/controller/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/conference_hyd.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/entities/conference_hyd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/conferencier_hyd.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/entities/conferencier_hyd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/conferences.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/conferences.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/conferenciers.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/conferenciers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/conference_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/conference_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
