@@ -4,9 +4,11 @@
     <list default="true" id="9eb3d20d-9a1f-426d-8ad4-12a93379fa98" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/controller/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/conference_hyp.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/conference_hyd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/conferencier_hyd.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/conferencier_hyd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/conference_hyd.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/entities/conference_hyd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/conferencier_hyd.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/entities/conferencier_hyd.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/conferences.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/conferences.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/conferenciers.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/conferenciers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/conference_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/conference_view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +38,12 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../POO_sql" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DB_forum_clone_emira" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/model" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -83,26 +90,26 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1581605541354">
+    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1581678211236">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1581605541354" />
-    <state width="1276" height="237" key="GridCell.Tab.0.bottom" timestamp="1581674931697">
+    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1581678211236" />
+    <state width="1276" height="367" key="GridCell.Tab.0.bottom" timestamp="1581690952813">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="237" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1581674931697" />
-    <state width="1276" height="237" key="GridCell.Tab.0.center" timestamp="1581674931697">
+    <state width="1276" height="367" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1581690952813" />
+    <state width="1276" height="367" key="GridCell.Tab.0.center" timestamp="1581690952811">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="237" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1581674931697" />
-    <state width="1276" height="237" key="GridCell.Tab.0.left" timestamp="1581674931696">
+    <state width="1276" height="367" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1581690952811" />
+    <state width="1276" height="367" key="GridCell.Tab.0.left" timestamp="1581690952810">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="237" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1581674931696" />
-    <state width="1276" height="237" key="GridCell.Tab.0.right" timestamp="1581674931697">
+    <state width="1276" height="367" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1581690952810" />
+    <state width="1276" height="367" key="GridCell.Tab.0.right" timestamp="1581690952812">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="237" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1581674931697" />
+    <state width="1276" height="367" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1581690952812" />
     <state x="372" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1581674200856">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

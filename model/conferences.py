@@ -1,5 +1,5 @@
 from model.connection import Connection
-from entities.conference_hyd import HydConference
+from model.entities.conference_hyd import HydConference
 
 class Conference():
     def __init__(self):
@@ -8,7 +8,7 @@ class Conference():
     def add_conference(self, titre, resume, date, heure, date_creation, id_conferencier):
         """method adding conference"""
         argument=(titre, resume, date, heure, date_creation, id_conferencier)
-        sql="""INSERT INTO conferences (titre, resume, date, heure, date_creation, id_conferencier) VALUES (%s,%s,%s,%s,%s,%s);"""
+        sql="""INSERT INTO conferences (titre, resume, date, heure, date_creation, id_conferencier) VALUES (%s,%s,%s,%s,now(),%s);"""
         self.db.initialize_connection()
         self.db.cursor.execute(sql, argument)
         self.db.connection.commit()

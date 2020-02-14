@@ -1,4 +1,5 @@
 from model.connection import Connection
+from model.entities.conferencier_hyd import HydConferencier
 
 class Conferencier():
     def __init__(self):
@@ -26,5 +27,9 @@ class Conferencier():
         self.db.initialize_connection()
         self.db.cursor.execute("SELECT * FROM conferenciers WHERE statut_actif=True ;")
         actif_conferenciers = self.db.cursor.fetchall()
+        for key, value in enumerate(actif_conferenciers):
+            actif_conferenciers[key]=HydConferencier(value)
+
         self.db.close_connection()
+
         return actif_conferenciers
