@@ -1,4 +1,5 @@
 from model.connection import Connection
+from entities.conference_hyd import HydConference
 
 class Conference():
     def __init__(self):
@@ -35,4 +36,6 @@ class Conference():
         self.db.cursor.execute(SQL)
         all_conferences = self.db.cursor.fetchall()
         self.db.close_connection()
+        for key, value in enumerate (all_conferences):
+            all_conferences[key]=HydConference(value)
         return all_conferences
