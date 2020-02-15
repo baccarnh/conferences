@@ -8,34 +8,44 @@ choice_action=""
 
 if __name__ == '__main__':
 
-    choice_table = input("veuillez saisir le nom de la table sur la quelle vous voudriez agir\n"
-                         "cf pour conferences\n "
-                         "cfcier pour conferenciers \n"
-                         "tapez q pour quitter").lower()
 
-    while choice_table != 'q':
+    while choice_table not in ["cf","cfcier","q"]:
+        print("verifiez votre saisie cf cfcier ou q")
+        choice_table = input("veuillez saisir le nom de la table sur la quelle vous voudriez agir\n"
+                             "cf pour conferences\n "
+                             "cfcier pour conferenciers \n"
+                             " q pour quitter").lower()
+    else:
+        while choice_table !="q":
 
-        if choice_table == 'cf':
-            choice_action = input("veuillez saisir: \n"
-                            "A pour ajouter une conference \n"
-                            "S pour supprimer une conference \n"
-                            "C pour consulter une conference").lower()
-            if choice_action=="a":
-                discours.add_conference()
-            if choice_action=="s":
-                discours.delete_conference()
-            if choice_action=="c":
-                discours.display_conference()
-        if choice_table=="cfcier":
-            choice_action = input("veuillez saisir: \n "
-                                  "A pour ajouter un conferencier \n "
-                                  "S pour supprimer un conferencier \n"
-                                  "C pour consulter un conferencier").lower()
-            if choice_action == "a":
-                auteur.add_conferencier()
-            if choice_action == "s":
-                auteur.delete_conferencier()
-            if choice_action == "c":
-                auteur.display_conferencier()
+            if choice_table == "cf":
+                while choice_action not in ["a","s","c"]:
+                    print("verifiez votre saisie ")
+                    choice_action = input("veuillez saisir: \n"
+                                "A pour ajouter une conference \n"
+                                "S pour supprimer une conference \n"
+                                "C pour consulter une conference").lower()
+                else:
+                    if choice_action=="a":
+                        discours.add_conference()
+                    if choice_action=="s":
+                        discours.delete_conference()
+                    if choice_action=="c":
+                        discours.display_conference()
+            if choice_table=="cfcier":
 
-        exit()
+                while choice_action not in ["a","s","c"]:
+                    print("verifiez votre saisie ")
+                    choice_action = input("veuillez saisir: \n"
+                                "A pour ajouter une conference \n"
+                                "S pour supprimer une conference \n"
+                                "C pour consulter une conference").lower()
+                else:
+                    if choice_action == "a":
+                        auteur.add_conferencier()
+                    if choice_action == "s":
+                        auteur.delete_conferencier()
+                    if choice_action == "c":
+                        auteur.display_conferencier()
+
+            exit()

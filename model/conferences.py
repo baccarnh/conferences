@@ -24,8 +24,8 @@ class Conference():
 
     def display_conference(self):
         '''method selecting all conferences with the nom prenom of conferencier having the id_conferencier valable'''
-        SQL = "SELECT conferences.*, conferenciers.prenom, conferenciers.nom " \
-              "FROM conferences INNER JOIN conferenciers" \
+        SQL = " SELECT conferences.*, conferenciers.prenom, conferenciers.nom " \
+              " FROM conferences INNER JOIN conferenciers" \
               " ON conferences.id_conferencier=conferenciers.id " \
               " ORDER BY conferences.date;"
 
