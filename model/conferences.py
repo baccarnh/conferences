@@ -26,7 +26,8 @@ class Conference():
         '''method selecting all conferences with the nom prenom of conferencier having the id_conferencier valable'''
         SQL = "SELECT conferences.*, conferenciers.prenom, conferenciers.nom " \
               "FROM conferences INNER JOIN conferenciers" \
-              " ON conferences.id_conferencier=conferenciers.id;"
+              " ON conferences.id_conferencier=conferenciers.id " \
+              " ORDER BY conferences.date;"
 
         """SELECT a.*, b.prenom, b.prenom
         From conferences as a INNER JOIN conferenciers as b
@@ -35,6 +36,7 @@ class Conference():
         self.db.initialize_connection()
         self.db.cursor.execute(SQL)
         all_conferences = self.db.cursor.fetchall()
+        print(all_conferences)
         self.db.close_connection()
         for key, value in enumerate (all_conferences):
             all_conferences[key]=HydConference(value)
